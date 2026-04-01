@@ -5,12 +5,12 @@ use Inertia\Inertia;
 use App\Http\Controllers\TaskController; 
 
 Route::get('/', function () {
-    return redirect()->route('home');
+    return response('OK', 200);
 });
 
-// Route::get('dashboard', function () {
-//     return Inertia::render('Dashboard');
-// })->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('dashboard', function () {
+    return response('Dashboard', 200);
+})->middleware(['auth', 'verified'])->name('dashboard');
 
 
 // for logged in users
