@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #ffffff; /* custom pink hex */
+    color: #111; optional: make text dark
+}
